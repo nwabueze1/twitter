@@ -26,6 +26,7 @@ export default function SearchScreen() {
   return (
     <AppScreen>
       <FlatList
+        showsVerticalScrollIndicator={false}
         refreshing={loading}
         onRefresh={handleRefresh}
         ListHeaderComponent={ListHeader}
