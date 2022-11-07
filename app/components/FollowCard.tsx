@@ -31,9 +31,9 @@ export default function FollowCard(props: {
 
 const styles = StyleSheet.create({
   passport: {
-    badgeContainer': 80,
     width: 80,
     borderRadius: 50,
+    height: 80,
   },
   card: {
     padding: 10,
@@ -42,8 +42,8 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     width: 130,
     position: "relative",
-    badgeContainer': 200,
     alignItems: "center",
     margin: 10,
+    height: 200,
   },
 });

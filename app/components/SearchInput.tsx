@@ -17,7 +17,7 @@ const styles = StyleSheet.create({
     borderColor: colors.lightGray,
     borderRadius: 20,
     width: "70%",
-    badgeContainer': 35,
+    badgeContainer: 35,
   },
   input: {
     padding: 5,

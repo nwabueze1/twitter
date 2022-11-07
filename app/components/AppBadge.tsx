@@ -9,13 +9,13 @@ interface IProps {
   iconName: iconName;
 }
 
-export default function Badge({ iconName }: IProps) {
+export default function AppBadge({ iconName }: IProps) {
   const [isOpen, setOpen] = useState(false);
 
   const handlePress = () => setOpen(!isOpen);
   return (
     <View>
-      {isOpen ? (
+      {/* {isOpen ? (
         <View style={styles.iconContainers}>
           <MaterialCommunityIcons name="nodejs" size={28} color="green" />
           <MaterialCommunityIcons name="vuejs" size={28} color="green" />
@@ -27,27 +27,27 @@ export default function Badge({ iconName }: IProps) {
         <View style={styles.badgeContainer}>
           <MaterialCommunityIcons name={iconName} size={25} color={colors.white} />
         </View>
-      </TouchableOpacity>
+      </TouchableOpacity> */}
     </View>
   );
 }
 
 const styles = StyleSheet.create({
-  badgeContainer: {
-    height: 65,
-    width: 65,
-    justifyContent: "center",
-    alignItems: "center",
-    backgroundColor: colors.blue,
-    borderRadius: 40,
-    position: "absolute",
-    bottom: 30,
-    right: 10,
-  },
-  iconContainers: {
-    position: "absolute",
-    bottom: 120,
-    right: 19,
-    width: 40,
-  },
+  // badgeContainer: {
+  //   height: 65,
+  //   width: 65,
+  //   justifyContent: "center",
+  //   alignItems: "center",
+  //   backgroundColor: colors.blue,
+  //   borderRadius: 40,
+  //   position: "absolute",
+  //   bottom: 30,
+  //   right: 10,
+  // },
+  // iconContainers: {
+  //   position: "absolute",
+  //   bottom: 120,
+  //   right: 19,
+  //   width: 40,
+  // },
 });

@@ -4,7 +4,6 @@ import AppScreen from "../components/AppScreen";
 import AppListItem from "../components/AppListItem";
 import { ITweets, tweets } from "../mock/tweets";
 import MessageListItem from "../components/MessageListItem";
-import Badge from "../components/Badge";
 
 export default function MessagesScreen() {
   const [data, setData] = useState<ITweets[]>([]);
@@ -29,7 +28,6 @@ export default function MessagesScreen() {
         keyExtractor={(c) => c.id.toString()}
         renderItem={({ item }) => <MessageListItem {...item} />}
       />
-      <Badge iconName="mail" />
     </AppScreen>
   );
 }

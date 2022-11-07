@@ -7,4 +7,5 @@ export const screens = {
   register: "Register",
   search: "Search",
   welcome: "Welcome",
+  spaces: "Spaces",
 };

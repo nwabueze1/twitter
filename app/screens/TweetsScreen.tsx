@@ -1,8 +1,8 @@
-import { FlatList, StyleSheet, Text, View } from "react-native";
+import { FlatList, StyleSheet } from "react-native";
 import React from "react";
 import AppScreen from "../components/AppScreen";
 import AppListItem from "../components/AppListItem";
-import { ITweets, tweets } from "../mock/tweets";
+import { tweets } from "../mock/tweets";
 import ListItemSeparator from "../components/ListItemSaperator";
 
 export default function TweetsScreen() {

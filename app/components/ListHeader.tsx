@@ -35,9 +35,9 @@ export const ListHeader = () => (
 );
 export const styles = StyleSheet.create({
   avatar: {
-    badgeContainer': 40,
     width: 40,
     borderRadius: 20,
+    height: 40,
   },
   headerContainer: {
     flexDirection: "row",
@@ -46,10 +46,10 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 10,
   },
   imageBackground: {
-    badgeContainer': 200,
     marginVertical: 10,
     justifyContent: "flex-end",
     padding: 5,
+    height: 250,
   },
   text: {
     fontSize: 18,

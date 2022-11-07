@@ -4,8 +4,11 @@ import AppScreen from "../components/AppScreen";
 import AppButton from "../components/AppButton";
 import AppText from "../components/AppText";
 import TwitterIcon from "../components/TwitterIcon";
+import { useNavigation } from "@react-navigation/native";
+import { screens } from "../utils/screens";
 
 export default function WelcomeScreen() {
+  const navigator = useNavigation();
   return (
     <AppScreen>
       <View style={styles.backgroundImage}>
@@ -15,8 +18,12 @@ export default function WelcomeScreen() {
           <AppText style={styles.subTitle}>Bringing the world closer to you</AppText>
         </View>
 
-        <AppButton onPress={() => {}} title="Login" variant="outlined" />
-        <AppButton onPress={() => {}} title="Register" />
+        <AppButton
+          onPress={() => navigator.navigate(screens.login as never)}
+          title="Login"
+          variant="outlined"
+        />
+        <AppButton onPress={() => navigator.navigate(screens.register as never)} title="Register" />
       </View>
     </AppScreen>
   );

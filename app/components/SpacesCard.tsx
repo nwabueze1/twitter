@@ -94,10 +94,10 @@ const styles = StyleSheet.create({
     flexDirection: "row",
   },
   image: {
-    badgeContainer': 30,
     width: 30,
     borderRadius: 30,
     position: "relative",
+    height: 30,
   },
   adjustImagePosition: {
     position: "absolute",
@@ -107,8 +107,8 @@ const styles = StyleSheet.create({
     zIndex: 1,
   },
   hostImage: {
-    badgeContainer': 30,
     width: 30,
     borderRadius: 30,
+    height: 30,
   },
 });

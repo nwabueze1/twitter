@@ -3,7 +3,7 @@ import React from "react";
 import { colors } from "../config/colors";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
 
-interface IInputProps {
+export interface IInputProps {
   name: string;
   type: KeyboardTypeOptions | "password";
   placeholder: string;
@@ -13,7 +13,11 @@ interface IInputProps {
 export default function AppTextInput({ name, onChange, type, value, placeholder }: IInputProps) {
   return (
     <View style={styles.container}>
-      <MaterialCommunityIcons name={type === "email-address" ? "email" : type === "password" ? "lock" : "account"} size={30} color={colors.blue} />
+      <MaterialCommunityIcons
+        name={type === "email-address" ? "email" : type === "password" ? "lock" : "account"}
+        size={30}
+        color={colors.blue}
+      />
       <TextInput
         keyboardType={type as KeyboardTypeOptions}
         onChangeText={onChange}
